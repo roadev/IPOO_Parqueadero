@@ -12,6 +12,7 @@
 
 Parqueadero::Parqueadero() {
     cuposDisponibles = 20;
+    carros = 0;
     
 }
 
@@ -38,19 +39,18 @@ char Parqueadero::menu(){
             carros --;
             cuposDisponibles ++;
             break;
-            case 3: cout<<"El número de carros en el parqueadero es de: "<<endl;
-            return carros;
+            case 3: cout<<"El número de carros en el parqueadero es de: "<<carros<<endl;
             break;
             default: cout<<"Opción no válida"<<endl;
             break;
         }
-        do{
-            /*if((respuestaEntrarCarro >20)||(respuestaEntrarCarro <=0)){
+        /*do{
+            if((respuestaEntrarCarro >20)||(respuestaEntrarCarro <=0)){
                 cout<<"Ingrese un número mayor que cero y menor o igual a 20"<<endl;
-            }*/
+            }
             cuposDisponibles--;
         }
-        while((respuestaEntrarCarro >20)||(respuestaEntrarCarro <=0));
+        while((respuestaEntrarCarro >20)||(respuestaEntrarCarro <=0));*/
         if(cuposDisponibles = 0){
             cout<<"No hay más cupos disponibles, debe desplegar cupos."<<endl;
         }
