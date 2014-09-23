@@ -20,14 +20,14 @@ Parqueadero::~Parqueadero() {
 }
 
 char Parqueadero::menu(){
+    
     cout<<"Bienvenido al parqueadero."<<endl;
+    
     char respuestaMenu;
     
     do{
         cout<<"Ingrese la opción 1 para: Entrar carro. \n Opción 2 para: Sacar carro. \n Opcion 3 para: "
-                "Desplegar cupo"<<endl;
-        char respuestaEntrarCarro, respuestaSacarCarro;
-        
+                "Desplegar cupo"<<endl;    
         
         int opcion;
         cin>>opcion;
@@ -61,11 +61,9 @@ char Parqueadero::menu(){
     return 0;
 }
 
-stringstream Parqueadero::sobreCupo(){
-    stringstream sobreCupo;
+string Parqueadero::sobreCupo(){
+    
     if(cuposDisponibles = 0){
-            sobreCupo << "No hay más cupos disponibles, debe retirar carros del parqueadero"<<endl;
-            sobreCupo.str();
+            cout << "No hay más cupos disponibles, debe retirar carros del parqueadero"<<endl;
         }
 }
-

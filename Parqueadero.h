@@ -25,7 +25,7 @@ public:
     void sacarCarro();
     void desplegarCupo();
     char menu();
-    stringstream sobreCupo();
+    string sobreCupo();
     string getSobreCupo();
     
 private:
