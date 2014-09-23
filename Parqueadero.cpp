@@ -1,6 +1,6 @@
 /* Autores: Hecho por: Juan David Roa Valencia y Jhonatan David Vanegas Arrieta
  * Fecha de creación: 22/09/14
- * Versión: 1.0
+ * Versión: 1.2
  * 
  * Nombre del archivo: Parqueadero.cpp
  * Responsabilidad: 
@@ -20,17 +20,19 @@ Parqueadero::~Parqueadero() {
 }
 
 char Parqueadero::menu(){
-    cout<<"Bienvenido al parqueadero"<<endl;
+    cout<<"Bienvenido al parqueadero."<<endl;
     char respuestaMenu;
     
     do{
         cout<<"Ingrese la opción 1 para: Entrar carro. \n Opción 2 para: Sacar carro. \n Opcion 3 para: "
                 "Desplegar cupo"<<endl;
         char respuestaEntrarCarro, respuestaSacarCarro;
+        cuposDisponibles = 20;
         
         int opcion;
         cin>>opcion;
         switch(opcion){
+            cuposDisponibles = 20;
             case 1: cout<<"Ha ingresado un vehículo al parqueadero"<<endl;
             carros ++;
             cuposDisponibles --;
@@ -40,19 +42,14 @@ char Parqueadero::menu(){
             cuposDisponibles ++;
             break;
             case 3: cout<<"El número de carros en el parqueadero es de: "<<carros<<endl;
+                    cout<<"El número de cupos disponibles es de: "<<cuposDisponibles<<endl;
             break;
             default: cout<<"Opción no válida"<<endl;
             break;
         }
-        /*do{
-            if((respuestaEntrarCarro >20)||(respuestaEntrarCarro <=0)){
-                cout<<"Ingrese un número mayor que cero y menor o igual a 20"<<endl;
-            }
-            cuposDisponibles--;
-        }
-        while((respuestaEntrarCarro >20)||(respuestaEntrarCarro <=0));*/
+        
         if(cuposDisponibles = 0){
-            cout<<"No hay más cupos disponibles, debe desplegar cupos."<<endl;
+            cout<<"No hay más cupos disponibles, debe retirar carros del parqueadero."<<endl;
         }
         cout<<"¿Desea continuar? \n Para Sí Escriba: s , para No Escriba: n"<<endl;
         cin>>respuestaMenu;
