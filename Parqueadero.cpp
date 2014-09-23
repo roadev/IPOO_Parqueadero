@@ -48,22 +48,23 @@ char Parqueadero::menu(){
             break;
             
             }
+        cupos = cuposDisponibles;
         
         
         cout<<"¿Desea continuar? \n Para Sí Escriba: s , para No Escriba: n"<<endl;
         cin>>respuestaMenu;
         
-    }
-    while ((respuestaMenu == 's') || (respuestaMenu == 'S'));
+        }
+    
+    while (((respuestaMenu == 's') || (respuestaMenu == 'S')) && (cupos >=0));
         
-    
-    
     return 0;
 }
+    
 
 string Parqueadero::sobreCupo(){
     
-    if(cuposDisponibles = 0){
+    if(cupos <= 0){
             cout << "No hay más cupos disponibles, debe retirar carros del parqueadero"<<endl;
         }
 }
