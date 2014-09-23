@@ -11,7 +11,7 @@
 #include "Parqueadero.h"
 
 Parqueadero::Parqueadero() {
-    cuposDisponibles = 20;
+    
     carros = 0;
     
 }
@@ -27,12 +27,12 @@ char Parqueadero::menu(){
         cout<<"Ingrese la opción 1 para: Entrar carro. \n Opción 2 para: Sacar carro. \n Opcion 3 para: "
                 "Desplegar cupo"<<endl;
         char respuestaEntrarCarro, respuestaSacarCarro;
+        int cuposDisponibles;
         cuposDisponibles = 20;
-        
         int opcion;
         cin>>opcion;
         switch(opcion){
-            cuposDisponibles = 20;
+            
             case 1: cout<<"Ha ingresado un vehículo al parqueadero"<<endl;
             carros ++;
             cuposDisponibles --;
