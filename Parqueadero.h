@@ -28,7 +28,7 @@ public:
     
 private:
     
-    
+    int cuposDisponibles;
     int carros;
 };
 
