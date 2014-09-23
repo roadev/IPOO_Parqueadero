@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux-x86
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux-x86
-CND_ARTIFACT_NAME_Debug=parqueadero
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/parqueadero
+CND_ARTIFACT_NAME_Debug=ipoo_parqueadero
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/ipoo_parqueadero
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Debug=parqueadero.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/parqueadero.tar
+CND_PACKAGE_NAME_Debug=ipooparqueadero.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/ipooparqueadero.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux-x86
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux-x86
-CND_ARTIFACT_NAME_Release=parqueadero
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/parqueadero
+CND_ARTIFACT_NAME_Release=ipoo_parqueadero
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/ipoo_parqueadero
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Release=parqueadero.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/parqueadero.tar
+CND_PACKAGE_NAME_Release=ipooparqueadero.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/ipooparqueadero.tar
 #
 # include compiler specific variables
 #

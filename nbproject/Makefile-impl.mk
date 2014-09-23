@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Parqueadero
+PROJECTNAME=IPOO_Parqueadero
 
 # Active Configuration
 DEFAULTCONF=Debug

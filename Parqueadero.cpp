@@ -18,7 +18,7 @@ Parqueadero::Parqueadero() {
 Parqueadero::~Parqueadero() {
 }
 
-Parqueadero::menu(){
+char Parqueadero::menu(){
     cout<<"Bienvenido al parqueadero"<<endl;
     
     do{
@@ -27,24 +27,25 @@ Parqueadero::menu(){
         char respuestaEntrarCarro, respuestaMenu, respuestaSacarCarro;
         
         int opcion;
+        cin>>opcion;
         switch(opcion){
-            case 1: cout<<"Ingrese el número de vehículos a ingresar"<<endl;
-            cin >> respuestaEntrarCarro;
+            case 1: cout<<"Ha ingresado un vehículo al parqueadero"<<endl;
+            carros ++;
             break;
-            case 2: cout<<"Ingrese el número de vehículos a retirar"<<endl;
-            cin >> respuestaSacarCarro;
+            case 2: cout<<"Ha retirado un vehículo del parqueadero"<<endl;
+            carros --;
             break;
-            case 3: cout<<"Ingrese el número de vehículos a retirar"<<endl;
-            cin >> respuestaSacarCarro;
+            case 3: cout<<"El número de carros en el parqueadero es de: "<<endl;
+            return carros;
             break;
         }
         do{
-            if((respuestaEntrarCarro >20)||(respuestaEntrarCarro <=0)){
+            /*if((respuestaEntrarCarro >20)||(respuestaEntrarCarro <=0)){
                 cout<<"Ingrese un número mayor que cero y menor o igual a 20"<<endl;
-            }
+            }*/
             cuposDisponibles--;
         }
-        while("");
+        while((respuestaEntrarCarro >20)||(respuestaEntrarCarro <=0));
         if(cuposDisponibles = 0){
             cout<<"No hay más cupos disponibles, debe desplegar cupos."<<endl;
         }

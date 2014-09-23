@@ -29,7 +29,7 @@ public:
 private:
     
     int cuposDisponibles;
-    
+    int carros;
 };
 
 #endif	/* PARQUEADERO_H */
