@@ -1,6 +1,6 @@
 /* Autores: Hecho por: Juan David Roa Valencia y Jhonatan David Vanegas Arrieta
  * Fecha de creación: 22/09/14
- * Versión: 1.2
+ * Versión: 2.0
  * 
  * Nombre del archivo: Parqueadero.cpp
  * Responsabilidad: 

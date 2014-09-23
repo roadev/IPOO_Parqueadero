@@ -1,6 +1,6 @@
 /* Autores: Hecho por: Juan David Roa Valencia y Jhonatan David Vanegas Arrieta
  * Fecha de creación: 22/09/14
- * Versión: 1.2
+ * Versión: 2.0
  * 
  * Nombre del archivo: Parqueadero.cpp
  * Responsabilidad: 
@@ -49,8 +49,7 @@ char Parqueadero::menu(){
             
             }
         cupos = cuposDisponibles;
-        
-        
+             
         cout<<"¿Desea continuar? \n Para Sí Escriba: s , para No Escriba: n"<<endl;
         cin>>respuestaMenu;
         
@@ -60,7 +59,6 @@ char Parqueadero::menu(){
         
     return 0;
 }
-    
 
 string Parqueadero::sobreCupo(){
     
