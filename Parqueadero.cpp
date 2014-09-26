@@ -42,7 +42,7 @@ char Parqueadero::menu(){
             cuposDisponibles ++;
             break;
             case 3: cout<<"El número de carros en el parqueadero es de: "<<carros<<endl;
-                    cout<<"El número de cupos disponibles es de: "<<cuposDisponibles<<endl;
+                     cout<<"El número de cupos disponibles es de: "<<cuposDisponibles<<endl;
             break;
             default: cout<<"Opción no válida"<<endl;
             break;
@@ -55,7 +55,7 @@ char Parqueadero::menu(){
         
         }
     
-    while (((respuestaMenu == 's') || (respuestaMenu == 'S')) && (cupos >=0));
+    while (((respuestaMenu == 's') || (respuestaMenu == 'S')) && (cupos >=0) && (cupos <=20));
         
     return 0;
 }
@@ -63,6 +63,9 @@ char Parqueadero::menu(){
 string Parqueadero::sobreCupo(){
     
     if(cupos <= 0){
-            cout << "No hay más cupos disponibles, debe retirar carros del parqueadero"<<endl;
+            cout << "No hay más cupos disponibles, debe retirar carros del parqueadero."<<endl;
         }
+        else if (cupos >= 20){
+				cout <<  "No hay vehículos para retirar, la cantidad de cupos es máxima." <<endl;
+			}
 }
